@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAJctHlfeInRkqD624bbpNej9AXjv8NB-g",
+    apiKey: "",
     authDomain: "think-piece-fd529.firebaseapp.com",
     databaseURL: "https://think-piece-fd529.firebaseio.com",
     projectId: "think-piece-fd529",
