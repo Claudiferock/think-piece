@@ -3,7 +3,7 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "",
+    apiKey: "AIzaSyAJctHlfeInRkqD624bbpNej9AXjv8NB-g",
     authDomain: "think-piece-fd529.firebaseapp.com",
     databaseURL: "https://think-piece-fd529.firebaseio.com",
     projectId: "think-piece-fd529",
@@ -22,6 +22,7 @@ const firebaseConfig = {
   //authorization provider
   export const provider = new firebase.auth.GoogleAuthProvider();
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
+  export const signOutWithGoogle = () => auth.signOut();
 
   window.firebase = firebase;
 
