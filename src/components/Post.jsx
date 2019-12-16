@@ -10,7 +10,6 @@ const Post = ({ id, title, content, user, createdAt, stars, comments }) => {
     postRef.update({ stars: stars + 1 });
     console.log(`stars: ${stars}`);
 };
- 
 
   return (
     <article className="Post">
