@@ -4,5 +4,11 @@ import { render } from 'react-dom';
 import './index.scss';
 
 import Application from './components/Application';
+import PostsProviders from './providers/PostProvider';
 
-render(<Application />, document.getElementById('root'));
+render(
+  <PostsProviders>
+      <Application />
+  </PostsProviders>,
+  document.getElementById('root')
+);
