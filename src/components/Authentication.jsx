@@ -9,7 +9,11 @@ const Authentication = ({ loading }) => {
 
   if (loading) return null;
 
-  return <div>{user ? <CurrentUser {...user} /> : <SignInAndSignUp />}</div>;
+  return (
+    <div>
+      { user ? <CurrentUser {...user} /> : <SignInAndSignUp /> }
+    </div>
+  )
 };
 
 export default Authentication;

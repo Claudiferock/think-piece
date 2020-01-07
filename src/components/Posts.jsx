@@ -11,7 +11,7 @@ const Posts = () => {
       <AddPost />
         {posts.map(post => <Post {...post} key={post.id} />)}
     </section>
-  )
-}
+  );
+};
 
 export default Posts;
