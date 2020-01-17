@@ -23,7 +23,7 @@ class SignUp extends Component {
         //user.updateProfile({ displayName });
         createUserProfileDocument(user, { displayName });
     } catch (error) {
-      console.error(error);
+      console.error('Error in signup', error.message);
     }
 
     this.setState({ displayName: '', email: '', password: '' });

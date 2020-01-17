@@ -17,7 +17,7 @@ const Post = ({ id, title, content, user, createdAt, stars, comments }) => {
   const remove = () => postRef.delete();
   const star = () => {
     postRef.update({ stars: stars + 1 });
-    console.log(`stars: ${stars}`);
+    //console.log(`stars: ${stars}`);
 };
 
   return (
